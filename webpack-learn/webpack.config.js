@@ -29,7 +29,9 @@ module.exports = {
     	template: __dirname + '/src/index.tmpl.html'
     }),
   	new webpack.optimize.CommonsChunkPlugin({
-  		names: ['vendor'],
+      // names字段支持以数组格式来指定基础库模块名称和运行时代码模块名称
+      // manifest 是包括webpack运行时runtime的块，可以称为entry chunk
+  		names: ['vendor','manifest'],
   	}),
     new ExtractTextPlugin('/css/[name].[chunkhash:8].css')
   ]
