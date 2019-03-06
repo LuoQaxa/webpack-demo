@@ -1,14 +1,24 @@
 {
-  "name": "task-webpack",
+  "name": "webpack-demo",
   "version": "1.0.0",
-  "description": "",
+  "description": "webpack踩坑记 ## 常用webpack插件",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "author": "luoqian",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/LuoQaxa/webpack-demo.git"
+  },
+  "keywords": [],
+  "author": "",
   "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/LuoQaxa/webpack-demo/issues"
+  },
+  "homepage": "https://github.com/LuoQaxa/webpack-demo#readme",
   "devDependencies": {
-    "webpack": "^2.2.1"
+    "webpack": "^4.29.6",
+    "webpack-cli": "^3.2.3"
   }
 }
