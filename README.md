@@ -21,5 +21,6 @@ devServer: {
 ## 插件Plugin
 1. HtmlWebpackPlugin： 解决了不需要在打包后的文件中去手动建立一个`index.html`,可以指定任意路径的html作为模版，并且自动将打包后的js文件添加到html中。
 
-
+## 配置开发所需loader
+webpack默认只支持js文件的打包，而开发所需的css,scss,less等各种文件都需要特定的loader进行转化。
 

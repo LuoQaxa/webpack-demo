@@ -1,0 +1,6 @@
+@import './a.css';
+@import './b.less';
+
+body {
+  background-color: red
+}
