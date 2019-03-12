@@ -1,11 +1,17 @@
 // this function is called when a resource should be transformed by this loader
 var babel = require('babel-core');
-function loader(sourceCode) {
+function loader(sourceCode, sourceMap) {
   var babelOptions = {
-    presets: ['env']
+    presets: ['env'],
+    inputSourceMap: sourceMap,
+    filename: this.request.split('!')[1].split('/').pop(),
+    sourceMap: true
   }
   var result = babel.transform(sourceCode, babelOptions)
-  return result.code
+  // return result.code
+  console.log(result.code);
+  
+  this.callback(null, result.code, result.map)
 }
 
 
